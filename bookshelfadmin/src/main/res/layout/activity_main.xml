@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg_1">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:shapeAppearanceOverlay="@style/RoundedTopCorners"
+        app:cardBackgroundColor="@color/slate_50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:id="@+id/book_1"
+                android:src="@drawable/logo_1"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="320dp"
+                android:layout_height="54dp"
+                android:background="@drawable/custom_button"
+                android:id="@+id/btn_up"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Create"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/book_1"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="320dp"
+                android:layout_height="54dp"
+                android:background="@drawable/custom_button"
+                android:id="@+id/btn_update_main"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Update"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_up"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="320dp"
+                android:layout_height="54dp"
+                android:background="@drawable/custom_button"
+                android:id="@+id/btn_delete_main"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Delete"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_update_main"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
